@@ -28,7 +28,7 @@ WORKDIR /app
 # Copy the built application from the build stage
 COPY --from=build /app/out .
 
-EXPOSE 80
+EXPOSE 8080
 
 # Command to start the application
 CMD ["dotnet", "SCASA.dll"]
